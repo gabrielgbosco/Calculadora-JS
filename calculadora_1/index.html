@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div id="calculadora">
+
+        <div class="container"> 
+            <h1>Calculadora</h1>
+
+            <form action="#" method="post">
+
+                <div>
+                    <select name="operacao" id="operacao">
+                        <option value="" selected disabled>Escolha uma operação</option>
+                        <option value="adicao">Adição</option>
+                        <option value="subtracao">Subtração</option>
+                        <option value="divisao">Divisão</option>
+                        <option value="multiplicacao">Multiplicação</option>
+                    </select>
+                </div>
+                <div class="input-numeros">
+                    <label for="primeiro-numero">Primeiro Número</label>
+                    <br>
+                    <input type="number" id="primeiro-numero" placeholder=" Digite o número aqui" required>
+                </div>
+                <div class="input-numeros">
+                    <label for="segundo-numero">Segundo Número</label>
+                    <br>
+                    <input type="number" id="segundo-numero" placeholder=" Digite o outro número aqui" required>
+                </div>
+                <div>
+                    <button id="calcula" type="button" onclick="realizarOperacao()">Calcular</button>
+                </div>
+
+            </form>
+        </div>
+        
+        <div id="resultado">
+            <p>O resultado foi: </p>
+            <p id="mostrarResultado"></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
